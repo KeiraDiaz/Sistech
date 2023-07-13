@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY 1010 BLOG</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="home.html">Home</a> 
+      <a href="blogsistek.html">Blog</a>
+      <a href="about.html">About</a>
+    </nav>
+    <br>
+     <h1>MY 1010 BLOG</h1>
+  </header>
+  <main>
+      
+    <article>
+      <h2>My Coding Blog</h2>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-md-g">
+            <h3>Add new blog post</h3>
+            <form class="add-blog">
+              <div class="form-group">
+                <label for="title-value">Title</label>
+                <input type="text" class="form-control" id="title-value">
+              </div>
+              <br>
+              <div class="form-group">
+                <label for="body-value">Update</label>
+                <textarea type="text" class="form-control" id="body-value"></textarea>
+              </div>
+              <br>
+              <button type="submit" class="btn-primary">Add to Blog Archive</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="post-list post-list-row">
+        <div class="card-container">
+          <div class="card mt4 bg-light">
+            <div class="card-body" style="width: 25rem;">
+              <h3 class="card-title">Card title</h3>
+              <h5 class="card-subtitle mb-2 text-muted">Card subtitle</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu lorem vestibulum mauris lobortis interdum. Quisque elementum elementum elit, ac imperdiet dolor tempus et. Aliquam egestas eget tellus at volutpat. Etiam a congue libero. Aenean justo enim, faucibus ac eros ac, ornare consectetur augue.</p>
+              <a href="#" class="card-link">Edit</a>
+              <a href="#" class="card-link">Delete</a>
+              <br>
+              <br>
+              <button onclick="likePost(1)">Like</button>
+              <p id="likeCounter1">0 likes</p>
+              <div class="heart-container"></div>
+              <hr>
+            </div>
+          </div>
+          <div class="card mt4 bg-light">
+            <div class="card-body" style="width: 25rem;">
+              <h3 class="card-title">Card title</h3>
+              <h5 class="card-subtitle mb-2 text-muted">Card subtitle</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu lorem vestibulum mauris lobortis interdum. Quisque elementum elementum elit, ac imperdiet dolor tempus et. Aliquam egestas eget tellus at volutpat. Etiam a congue libero. Aenean justo enim, faucibus ac eros ac, ornare consectetur augue.</p>
+              <a href="#" class="card-link">Edit</a>
+              <a href="#" class="card-link">Delete</a>
+              <br>
+              <br>
+              <button onclick="likePost(2)">Like</button>
+              <p id="likeCounter2">0 likes</p>
+              <div class="heart-container"></div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+   <script src="script.js"></script>
+  </main>
+</body> 
+</html>
